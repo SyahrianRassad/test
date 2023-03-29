@@ -17,7 +17,11 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "postbuild": "purgecss --css build/static/css/*.css --content build/index.html build/static/js/*.js --output build/static/css"
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "postbuild": "postcss src/index.css -o src/index.css"
   },
   "eslintConfig": {
     "extends": [
@@ -39,6 +43,8 @@
   },
   "devDependencies": {
     "@fullhuman/postcss-purgecss": "^5.0.0",
-    "postcss": "^8.4.21"
+    "postcss": "^8.4.21",
+    "postcss-cli": "^10.1.0",
+    "purgecss": "^5.0.0"
   }
 }
