@@ -44,19 +44,19 @@ const Slide = () => {
     <div className='container mt-2'>
         <Slider {...settings}>
           <div>
-            <img src="https://storage.99usahaku.com/bootstrap/campaigns/5c88a2881aca4fce05175e1c/1665626869182.webp" alt="image" />
+            <img src="../assets/1665626679483.webp" alt="image" />
           </div>
           <div>
-            <img src="https://storage.99usahaku.com/bootstrap/campaigns/5c88a2881aca4fce05175e1c/1665626679483.webp" alt="image" />
+            <img src="../assets/1665626814939.webp" alt="image" />
           </div>
           <div>
-            <img src="https://storage.99usahaku.com/bootstrap/campaigns/5c88a2881aca4fce05175e1c/1678332186768.webp" alt="image" />
+            <img src="../assets/1665626869182.webp" alt="image" />
           </div>
           <div>
-            <img src="https://storage.99usahaku.com/bootstrap/campaigns/5c88a2881aca4fce05175e1c/1665626869182.webp" alt="image" />
+            <img src="../assets/1678331677164.webp" alt="image" />
           </div>
           <div>
-            <img src="https://storage.99usahaku.com/bootstrap/campaigns/5c88a2881aca4fce05175e1c/1665626814939.webp" alt="image" />
+            <img src="../assets/1678332186768.webp" alt="image" />
           </div>
         </Slider>
     </div>
