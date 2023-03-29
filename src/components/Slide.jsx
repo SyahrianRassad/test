@@ -1,6 +1,5 @@
 import React from 'react'
 import Slider from "react-slick";
-import gambar1 from "../assets/1665626679483.webp"
 
 
 const Slide = () => {
@@ -45,19 +44,19 @@ const Slide = () => {
     <div className='container mt-2'>
         <Slider {...settings}>
           <div>
-            <img src={gambar1} alt="image" />
+            <img src="../assets/1665626679483.webp" alt="image" />
           </div>
           <div>
-            <img src={gambar1} alt="image" />
+            <img src="../assets/1665626814939.webp" alt="image" />
           </div>
           <div>
-            <img src={gambar1} alt="image" />
+            <img src="../assets/1665626869182.webp" alt="image" />
           </div>
           <div>
-            <img src={gambar1} alt="image" />
+            <img src="../assets/1678331677164.webp" alt="image" />
           </div>
           <div>
-            <img src={gambar1} alt="image" />
+            <img src="../assets/1678332186768.webp" alt="image" />
           </div>
         </Slider>
     </div>
