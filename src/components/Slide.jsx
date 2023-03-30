@@ -1,4 +1,4 @@
-import React,{ lazy } from 'react';
+import React,{ lazy, Suspense } from 'react';
 import gambar1 from "../assets/1665626679483.webp"
 import gambar2 from "../assets/1665626814939.webp"
 import gambar3 from "../assets/1665626869182.webp"
@@ -47,6 +47,7 @@ const Slide = () => {
   };
   return (
     <div className='container mt-2'>
+      <Suspense fallback={<div>Loading...</div>}>
         <Slider {...settings}>
           <div>
             <img src={gambar1} alt="image" />
@@ -64,6 +65,7 @@ const Slide = () => {
             <img src={gambar5} alt="image" />
           </div>
         </Slider>
+      </Suspense>
     </div>
   )
 }
