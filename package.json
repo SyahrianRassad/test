@@ -21,7 +21,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "postbuild": "postcss src/index.css -o src/index.css"
+    "purgecss": "purgecss --config purgecss.config.js --output ./src/index.css --rejected"
   },
   "eslintConfig": {
     "extends": [
