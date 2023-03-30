@@ -21,7 +21,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "purgecss": "purgecss --config purgecss.config.js --output ./src/styles --rejected"
+    "purgecss": "purgecss --config purgecss.config.js --output ./src/styles --rejected",
+    "minify-react-slick": "uglifyjs node_modules/react-slick/lib/* -o node_modules/react-slick/lib.min.js"
   },
   "eslintConfig": {
     "extends": [
@@ -45,6 +46,7 @@
     "@fullhuman/postcss-purgecss": "^5.0.0",
     "postcss": "^8.4.21",
     "postcss-cli": "^10.1.0",
-    "purgecss": "^5.0.0"
+    "purgecss": "^5.0.0",
+    "uglify-js": "^3.17.4"
   }
 }

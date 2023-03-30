@@ -1,11 +1,10 @@
-import React,{ lazy, Suspense } from 'react';
+import React from 'react'
+import Slider from "react-slick";
 import gambar1 from "../assets/1665626679483.webp"
 import gambar2 from "../assets/1665626814939.webp"
 import gambar3 from "../assets/1665626869182.webp"
 import gambar4 from "../assets/1665626869182.webp"
 import gambar5 from "../assets/1678332186768.webp"
-
-const Slider = lazy(() => import('react-slick'));
 
 const Slide = () => {
   const settings = {
@@ -47,7 +46,6 @@ const Slide = () => {
   };
   return (
     <div className='container mt-2'>
-      <Suspense fallback={<div>Loading...</div>}>
         <Slider {...settings}>
           <div>
             <img src={gambar1} alt="image" />
@@ -65,7 +63,6 @@ const Slide = () => {
             <img src={gambar5} alt="image" />
           </div>
         </Slider>
-      </Suspense>
     </div>
   )
 }
