@@ -1,7 +1,8 @@
-import React from 'react'
-import Slide from  "../components/Slide"
-import Navbar from '../components/Navbar'
-import ProductList from '../components/ProductList'
+import React from 'react';
+
+const Slide = React.lazy(() => import('../components/Slide'));
+const Navbar = React.lazy(() => import('../components/Navbar'));
+const ProductList = React.lazy(() => import('../components/ProductList'));
 
 const Home = () => {
   return (

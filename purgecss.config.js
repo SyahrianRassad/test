@@ -4,4 +4,5 @@ module.exports = {
     './node_modules/bulma/css/bulma.css',
   ],
   safelist: [],
+  whitelist: ['html'],
 }
