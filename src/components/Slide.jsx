@@ -46,7 +46,7 @@ const Slide = () => {
   };
   return (
     <div className='container mt-2'>
-      <link rel="preload" href="../../node_modules/slick-carousel/slick/fonts/slick.woff" as="font" type="font/woff" crossorigin/>
+      <link rel="preload" href="https://test-beige-one-88.vercel.app/static/media/slick.295183786cd8a1389865.woff" as="font" type="font/woff" crossorigin/>
         <Slider {...settings}>
           <div>
             <img src={gambar1} alt="image" />

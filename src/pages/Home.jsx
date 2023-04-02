@@ -1,17 +1,20 @@
-import React from 'react'
-import Slide from  "../components/Slide"
-import Navbar from '../components/Navbar'
-import ProductList from '../components/ProductList'
+import React, { Suspense } from 'react';
+
+const Slide = React.lazy(() => import('../components/Slide'));
+const Navbar = React.lazy(() => import('../components/Navbar'));
+const ProductList = React.lazy(() => import('../components/ProductList'));
 
 const Home = () => {
   return (
     <div className='container mt-5'>
-        <Navbar/>
-        <br />
-        <Slide/>   
-        <br />
-        <br />
-        <ProductList/>
+      <Suspense fallback={<div>Loading...</div>}>
+          <Navbar/>
+          <br />
+          <Slide/>   
+          <br />
+          <br />
+          <ProductList/>
+      </Suspense>
     </div>
   )
 }
