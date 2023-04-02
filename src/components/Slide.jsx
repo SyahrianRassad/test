@@ -1,12 +1,11 @@
-import React from 'react';
-
+import React from 'react'
+import Slider from "react-slick";
 import gambar1 from "../assets/1665626679483.webp"
 import gambar2 from "../assets/1665626814939.webp"
 import gambar3 from "../assets/1665626869182.webp"
 import gambar4 from "../assets/1665626869182.webp"
 import gambar5 from "../assets/1678332186768.webp"
 
-const Slider = React.lazy(() => import('react-slick'));
 const Slide = () => {
   const settings = {
     dots: true,
@@ -45,28 +44,27 @@ const Slide = () => {
       }
     ]
   };
-
   return (
     <div className='container mt-2'>
-      <Slider {...settings}>
-        <div>
-          <img src={gambar1} alt="image" />
-        </div>
-        <div>
-          <img src={gambar2} alt="image" />
-        </div>
-        <div>
-          <img src={gambar3} alt="image" />
-        </div>
-        <div>
-          <img src={gambar4} alt="image" />
-        </div>
-        <div>
-          <img src={gambar5} alt="image" />
-        </div>
-      </Slider>
+        <Slider {...settings}>
+          <div>
+            <img src={gambar1} alt="image" />
+          </div>
+          <div>
+            <img src={gambar2} alt="image" />
+          </div>
+          <div>
+            <img src={gambar3} alt="image" />
+          </div>
+          <div>
+            <img src={gambar4} alt="image" />
+          </div>
+          <div>
+            <img src={gambar5} alt="image" />
+          </div>
+        </Slider>
     </div>
   )
 }
 
-export default Slide;
+export default Slide
